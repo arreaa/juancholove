@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Will you be my boyfriend, Juan?</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        padding: 50px;
+      }
+      button {
+        font-size: 20px;
+        padding: 10px 20px;
+        margin: 10px;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+      }
+     .yes {
+        background-color: #008000;
+        color: white;
+      }
+     .no {
+        background-color: #ff0000;
+        color: white;
+      }
+      #response {
+        display: none;
+        margin-top: 20px;
+        font-size: 24px;
+        color: #333;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>"Quieres ser mi novio, Juan? 🤍"</h1>
+    <button id="yes" class="yes">Si</button>
+    <button id="no" class="no">No</button>
+    <div id="response"></div>
+    <script>
+      const yesButton = document.getElementById("yes");
+      const noButton = document.getElementById("no");
+      const responseDiv = document.getElementById("response");
+
+      yesButton.addEventListener("click", () => {
+        responseDiv.innerText = "Te quiero mucho porfa nunca te vayas de mi lado, me haces muy feliz :) 🤍";
+        responseDiv.style.display = "block";
+      });
+
+      noButton.addEventListener("click", () => {
+        responseDiv.innerText = "No es una respuesta valida, solo se puede 'si'.";
+        responseDiv.style.display = "block";
+      });
+    </script>
+  </body>
+</html>
